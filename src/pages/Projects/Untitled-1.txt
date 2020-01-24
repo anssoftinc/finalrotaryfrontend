@@ -1,0 +1,268 @@
+<template>
+  <div class="container mt-5 p-4" id="top">
+    <h1 class="text-left">Earthquake Relief Assistance</h1>
+    <hr class="my-4" />
+
+    <div class="custom-card pl-5 pr-5">
+      <div class="row align-items-center">
+        <!-- <h2 class="p-3">Earthquake Fund</h2> -->
+        <div class="col-md-4">
+          <img src="/images/our-projects/earthquake3.png" class="img-fluid" />
+          <img src="/images/our-projects/earthquake-1.jpg" class="img-fluid" alt />
+        </div>
+
+        <div class="col-md-8">
+          <h2 class>Earthquake Fund</h2>
+          <p
+            class="text-justify p-3"
+          >Since the devastating earthquake of 2015 we have received funding from 51 Rotary Clubs around the world to provide earthquake relief assistance. We initially helped by supplying tarps and corrugated iron sheets immediately after the earthquake and we continue to follow-up with long-term reconstruction of schoolrooms, toilets, and alternative livelihoods options. Please see detailed information in our reports at:</p>
+          <ul>
+            <li>
+              <a
+                href="/images/our-projects/first-report.pdf"
+                target="_blank"
+              >First Earthquake Relief Assistance Report, May 2015</a>
+            </li>
+            <li>
+              <a
+                href="/images/our-projects/second-report.pdf"
+                target="_blank"
+              >Second Earthquake Relief Assistance Report, July 2015</a>
+            </li>
+            <li>
+              <a
+                href="/images/our-projects/third-report.pdf"
+                target="_blank"
+              >Third Earthquake Relief Assistance Report, Nov 2015</a>
+            </li>
+            <li>Final Earthquake Relief Assistance Report -- pending</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-4">
+        <h2 class="mt-5">International Contributors to our Earthquake Fund:</h2>
+        <p
+          class="pb-3"
+        >Our partners: The Rotary Club of Kathmandu Mid-Town would like to thank the following international clubs and individuals who have helped us with earthquake reconstruction:</p>
+
+        <div class="row align-items-center list">
+          <div class="col-md-3 pb-3">RC Bendigo, Australia</div>
+          <div class="col-md-3 pb-3">RC Stratford, Ontario, Canada</div>
+          <div class="col-md-3 pb-3">RC Parry Sound, Canada</div>
+          <div class="col-md-3 pb-3">RC Asolo e Pedemontana, Italy</div>
+          <div class="col-md-3 pb-3">RC Higashiosaka Nishi, Japan</div>
+          <div class="col-md-3 pb-3">RC Leatherhead, UK</div>
+          <div class="col-md-3 pb-3">RC Littlehampton, UK</div>
+          <div class="col-md-3 pb-3">RC Okehampton, UK</div>
+          <div class="col-md-3 pb-3">RC Cheshire Priory, UK</div>
+          <div class="col-md-3 pb-3">RC Eastbourne, UK</div>
+          <div class="col-md-3 pb-3">Rtn Pradeep Wagh in India</div>
+          <div class="col-md-3 pb-3">Andree Bichon in Ottawa, Canada</div>
+          <div class="col-md-3 pb-3">Anonymous, Denmark</div>
+          <div class="col-md-3 pb-3">Anonymous New York City, USA</div>
+          <div class="col-md-3 pb-3">Anonymous, UK</div>
+          <div class="col-md-3 pb-3">Rtn Bruno Malla and Family</div>
+          <div class="col-md-3 pb-3">Dr Chaudhary in India</div>
+          <div class="col-md-3 pb-3">RC Santa Rosa Sunrise, USA</div>
+          <div class="col-md-3 pb-3">Lantern Projects, USA</div>
+          <div class="col-md-3 pb-3">RC San Lorenzo Valley, USA</div>
+          <div class="col-md-3 pb-3">RC South Bay Sunrise, USA</div>
+          <div class="col-md-3 pb-3">RC South Portland, Maine,USA</div>
+          <div class="col-md-3 pb-3">RC Hunt Valley MD, USA</div>
+          <div class="col-md-3 pb-3">RC Los Gatos Morning Rotary, USA</div>
+          <div class="col-md-3 pb-3">RC Napa Noon Rotary, USA</div>
+          <div class="col-md-3 pb-3">RC Oakland, USA</div>
+          <div class="col-md-3 pb-3">RC Portsmouth NH, USA</div>
+          <div class="col-md-3 pb-3">RC Reno Central, USA</div>
+          <div class="col-md-3 pb-3">RC Reno Rotary Foundation, Reno, USA</div>
+          <div class="col-md-3 pb-3">RC Salt Lake City, USA</div>
+          <div class="col-md-3 pb-3">RC San Francisco Evening, USA</div>
+          <div class="col-md-3 pb-3">RC Auburn, Washington, USA</div>
+          <div class="col-md-3 pb-3">RC Galveston Island, Texas, USA</div>
+          <div class="col-md-3 pb-3">RC Galveston, Texas,USA</div>
+          <div class="col-md-3 pb-3">RC Green Hills Rotary Club, USA</div>
+          <div
+            class="col-md-3"
+          >Rotary Hilfe E.V. Leonberg-Weil Rtn Gerhard Pees and a Rotary Club in Stuttgart,Germany</div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <h2
+              class="mt-5"
+            >Completed and ongoing earthquake-related projects include the following:</h2>
+            <ul>
+              <li>
+                <b>Immediate relief after the earthquake</b>
+                – with the help of our Rotaract Club
+                we were able to help donate and distribute tents, tarpaulins, food supplies,
+                corrugated iron sheets, and the like soon after the earthquake. We would like
+                to acknowledge the help of our Rotary International District 3292 who gave
+                matching funds for every corrugated iron sheet donated.
+                <a
+                  href="/images/our-projects/immediate-relief.pdf"
+                  target="_blank"
+                >See details</a>
+              </li>
+              <li>
+                <b>Shree Amarpur Om Prasad Gautam Higher Secondary School in Gulmi</b> - reconstructing three+1 new, safe, child-friendly classrooms, a multipurpose
+                covered hall and terrace for student activities and teachers’ use, and a sanitary toilet
+                block.
+                <a
+                  href="/images/our-projects/shree-Amarpur.pdf"
+                  target="_blank"
+                >See details</a>
+              </li>
+              <li>
+                <b>Livlihoods Project in Nuwakot</b> - A post-earthquake reconstruction project that
+                supported diversification of livelihoods by promoting coffee and organic vegetable
+                production.
+                <router-link>See details</router-link>
+              </li>
+              <li>
+                <b>Parbati School, Dhungkhadka, Kavre</b> - reconstruction of classrooms in the primary
+                section and a toilet complex.
+                <router-link>See details</router-link>
+              </li>
+              <li>
+                <b>NavaKiran Helpless and Orphaned Children Society</b> - refurbishing of an area
+                approx. 500sq ft) for orphaned, deprived, and disabled children.
+                <router-link>See details</router-link>
+              </li>
+              <li>
+                <b>Tri-Ratna Cooperative School, Bungamati</b>
+                See details
+              </li>
+              <li>
+                <b>
+                  Post-earthquake ‘Build Back Better’ efforts at the Kanti Ishwari School and the
+                  Ajad Primary
+                </b> – work with two inner-city schools that are still in very poor condition
+                still four years after the disaster. They need a hand up to know that they have not
+                been forgotten and to help them to build back better after the earthquake.
+                <router-link>See details</router-link>
+              </li>
+              <li>
+                <b>Shitaldanda Basic School, Ajirkot-3, Hansapur, Gorkha School-</b> toilet
+                construction as part of a larger reconstruction effort.
+              </li>
+              <li>
+                <b>Phulchowki HS School, Thaiba -</b> a small project to plaster the roof to reinforce it.
+              </li>
+              <li>
+                <b>Tistung Janata Primary School School -</b> a water supply project to replace the one
+                damaged during the earthquake.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 text-center">
+            <img src="/images/our-projects/earthquake3.png" class="img-fluid" />
+            <img src="/images/our-projects/earthquake4.png" class="img-fluid" />
+            <!-- <img src="/images/our-projects/earthquake-2.jpg" class="img-fluid" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-card">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="/images/our-projects/coffee-project.jpg" class="img-fluid" alt />
+        </div>
+        <div class="col-md-8 p-3">
+          <h4>
+            Post Disaster: Women's Livelihoods Project - Expanded Coffee and
+            Vegetable Production
+          </h4>
+
+          <p
+            class="text-justify"
+          >This project, in collaboration with our friends at the Rotary Club of Singapore, the Earthquake Fund has helped to develop opportunities for improved livelihood and food security of communities in Nuwakot District. These earthquake affected communities will learn: organic vegetable production; seed preservation; and enterprise development. Women’s groups will learn now to grow winter crops particularly of organic vegetables and will develop the entrepreneurial and technical skills to successfully grow, harvest, process and market coffee in Kathmandu and regionally.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-card">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="/images/our-projects/bungmati1.jpg" class="img-fluid" alt />
+        </div>
+        <div class="col-md-8 p-3">
+          <h4>Bungamati School</h4>
+
+          <p class="text-justify">
+            The Tri Ratna School in Bungamati is a project that is still in the pipeline – it will support the reconstruction of 6 classrooms at this school. Our main partner is RC Nanimo Daybreak, RID 5020, Canada, and the Earthquake Relief, Rehabilitation and Reconstruction Program (ERRRP) of Rotary District 3292.
+            <a
+              class="parbati-school-link"
+              href="/images/our-projects/parbati-school-earthquake-fund.pdf"
+            >See details below</a>
+          </p>
+          <img src="/images/our-projects/bungmati-logo.jpg" width="120" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="/images/our-projects/bungmati2.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="/images/our-projects/bungmati3.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="/images/our-projects/bungmati4.jpg" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+  mounted() {}
+};
+</script>
+
+<style scoped>
+.logo {
+  width: 150px;
+}
+.how-section1 {
+  /* margin-top: -15%;
+  padding: 10%; */
+}
+.how-section1 h4 {
+  /* color: #019fcb;
+  font-weight: bold;
+  font-size: 20px; */
+}
+.how-section1 .subheading {
+  color: #3931af;
+  font-size: 20px;
+}
+.how-section1 .row {
+  margin-top: 6%;
+}
+
+.custom-card {
+  margin-top: 20px;
+  padding: 15px 15px;
+  background: #fff;
+}
+
+.custom-card-text {
+  /* padding: 10px 20px; */
+}
+
+.list {
+  font-weight: bold;
+  font-size: 14px;
+}
+.parbati-school-link:hover {
+  text-decoration: none;
+}
+</style>
+
+
