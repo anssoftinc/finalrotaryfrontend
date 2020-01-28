@@ -7,8 +7,8 @@
     <div class style="background:#f4f4f4">
       <div class="container">
         <div class="row mt-30">
-          <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item" v-for="item in listedmembers" :key="item" > -->
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item" v-for="item in members" :key="item" >
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item" v-for="item in listedmembers" :key="item" >
+          <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item" v-for="item in members" :key="item" > -->
 
             <div class="custom-card">
               <div class="row my-3">
@@ -25,6 +25,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -33,6 +34,7 @@
 </template>
 
 <script>
+// import VueLodash from 'vue-lodash'
 export default {
   data() {
     return {
@@ -239,13 +241,15 @@ export default {
           imageUrl: "abhishek.jpg"
         }
       ],
-      //  computed: {
-      // listedmembers: function () {
-      //   return orderBy(this.text[0].members, 'name')
-      // }
-      //  }
-    };
+    }
+     },
+computed: {
+  listedmembers() {
+    return this.members.slice().sort((a, b) => {
+      a.name - b.name
+    })
   }
+}
 };
 
 </script>

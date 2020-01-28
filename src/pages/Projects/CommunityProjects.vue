@@ -6,7 +6,7 @@
 
       <div class="custom-card">
         <div class="row">
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 ">
             <img src="/images/our-projects/gift-of-sight.jpg" class="img-fluid" alt />
           </div>
 
@@ -118,7 +118,7 @@ export default {
 }
 .row .col-md-4 img {
 height: 211px;
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 12px;
 }
 .gift-of-sight{

@@ -92,12 +92,13 @@
 import axios from "axios";
 import Vue from "vue";
 import PhotoContainer from "./PhotoContainer";
+import ninteen from "./ninteen.vue";
 import thirteen from "./thirteen.vue";
 import fourteen from "./fourteen.vue";
 import fifteen from "./fifteen.vue";
 import seventeen from "./seventeen.vue";
 import eighteen from "./eighteen.vue";
-import ninteen from "./ninteen.vue";
+
 export default {
   data() {
     return {
@@ -129,11 +130,11 @@ export default {
     }
   },
   components: {
+    eighteen,
     thirteen,
     fourteen,
     fifteen,
     seventeen,
-    eighteen,
     ninteen,
     PhotoContainer
   },

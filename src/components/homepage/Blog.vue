@@ -9,7 +9,7 @@
       </div> 
       <hr />
 <br>
-      <div class="row">
+      <div class="row ">
         <div class="col-lg-4 col-md-6" v-for="(item,index) in filteredItems" :key="index">
           <!-- Single Blog -->
           <div class="single-blog">
@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 .container-blog{
-  background-color:#FAA72F; 
+  /* background-color:#FAA72F;  */
 }
 /* .container-blog-me{
   background-color: #FAA72F; 
@@ -84,7 +84,7 @@ export default {
   margin-bottom: 100px;
 }
 .card:hover {
-  border: 1px sold #ddd;
+  border: 1px solid #ddd;
 }
 a {
   text-decoration: none;

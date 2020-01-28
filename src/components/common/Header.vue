@@ -380,6 +380,10 @@ a:hover {
   display: none;
   overflow: hidden;
 }
+ul li a:hover{
+color: #025198;
+}
+
 
 @media only screen and (max-width: 1004px) {
   .top-header {

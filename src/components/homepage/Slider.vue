@@ -73,8 +73,9 @@ export default {
 <style scoped>
 .header {
   position: relative;
-  height: 86vh;
-  min-height: 25rem;
+  /* height: 86vh; */
+  /* min-height: 25rem; */
+  height: auto;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
