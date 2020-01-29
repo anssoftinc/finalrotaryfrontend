@@ -10,14 +10,9 @@
         class="btn btn-primary-blue"
         @click="changeSelection(cat.id)"
         :class="selectedId == cat.id ? 'active' : ''"
-      >
-        {{ cat.name }}
-      </button>
+      >{{ cat.name }}</button>
     </div>
-    <div
-      class="text-center"
-      style="margin-bottom:0; background-color: #FBFCFF;"
-    >
+    <div class="text-center" style="margin-bottom:0; background-color: #FBFCFF;">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -39,11 +34,7 @@
                       :data-target="`#image-gallery`"
                       style="object-fit:cover;"
                     >
-                      <img
-                        class="img-thumbnail"
-                        v-lazy="image.url"
-                        alt="Retratos"
-                      />
+                      <img class="img-thumbnail" v-lazy="image.url" alt="Retratos" />
                     </a>
                   </div>
                 </div>
@@ -60,21 +51,13 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title" id="image-gallery-title"></h4>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                        >
+                        <button type="button" class="close" data-dismiss="modal">
                           <span aria-hidden="true">×</span>
                           <span class="sr-only">Close</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img
-                          id="image-gallery-image"
-                          class="img-responsive col-md-12"
-                          src
-                        />
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src />
                       </div>
                       <div class="modal-footer">
                         <button
@@ -162,13 +145,14 @@ export default {
     }
   },
   mounted() {
+
     axios
       .get(
         "https://rotaryclubkathmandumid-town.org/admin/wp-json/wp/v2/year_category"
       )
       .then(data => {
         this.categories = data.data;
-        this.changeSelection(this.categories[0].id);
+        this.changeSelection(this.categories[this.categories.length-1].id);
       })
       .catch(error => {
         console.log(error);
