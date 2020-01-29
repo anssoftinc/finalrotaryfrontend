@@ -219,9 +219,13 @@ a.box_btn:hover::before {
 
 .read-more {
   color: #025198;
-  border-bottom: 1px solid #025198;
   display: table;
   padding-top: 9px;
+    height: 42px;
+    padding-bottom: 7px;
+}
+.read-more:hover{
+  border-bottom: 1px solid #FAA72F;
 }
 .read-more-view{
   /* border-bottom: 1px solid #fff; */
@@ -247,11 +251,11 @@ a.box_btn:hover::before {
 .summary-text p img {
   display: none !important;
 }
-.read-more a {
-  color: #025198;
+.read-more, .read-more a{
+  color: #FAA72F;
 } 
 hr {
-  background-color: #025198;
+  background-color: #FAA72F;
   /* height: 0.5px; */
 }
 </style>

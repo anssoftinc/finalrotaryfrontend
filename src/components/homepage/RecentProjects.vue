@@ -201,7 +201,7 @@ hr {
 
 .read-more {
   color: var(--primary-red);
-  border-bottom: 1px solid var(--primary-red);
+  /* border-bottom: 1px solid var(--primary-red); */
   display: table;
 }
 
@@ -226,9 +226,12 @@ hr {
 }
 .read-more {
   color: #FAA72F;
-  border-bottom: 1px solid #FAA72F;
   display: table;
-  padding-top: 7px;
+  padding-top: 2px;
+  height: 35px;
+}
+.read-more:hover{
+  border-bottom: 1px solid #FAA72F;
 }
 .read-more a{
   /* color: #025198; */

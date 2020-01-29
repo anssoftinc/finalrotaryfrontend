@@ -245,7 +245,7 @@ export default {
      },
 computed: {
   listedmembers() {
-    return this.members.slice().sort((a, b) => {
+    return this.members.sort((a, b) => {
       a.name - b.name
     })
   }
