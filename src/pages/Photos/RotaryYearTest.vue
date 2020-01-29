@@ -5,14 +5,19 @@
       <hr class="my-4" />
 
       <button
-        v-for="cat in categories"
+        v-for="cat in filteredList"
         :key="cat.id"
         class="btn btn-primary-blue"
         @click="changeSelection(cat.id)"
-        :class="selectedId==cat.id?'active':''"
-      >{{cat.name}}</button>
+        :class="selectedId == cat.id ? 'active' : ''"
+      >
+        {{ cat.name }}
+      </button>
     </div>
-    <div class="text-center" style="margin-bottom:0; background-color: #FBFCFF;">
+    <div
+      class="text-center"
+      style="margin-bottom:0; background-color: #FBFCFF;"
+    >
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -34,7 +39,11 @@
                       :data-target="`#image-gallery`"
                       style="object-fit:cover;"
                     >
-                      <img class="img-thumbnail" v-lazy="image.url" alt="Retratos" />
+                      <img
+                        class="img-thumbnail"
+                        v-lazy="image.url"
+                        alt="Retratos"
+                      />
                     </a>
                   </div>
                 </div>
@@ -51,13 +60,21 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title" id="image-gallery-title"></h4>
-                        <button type="button" class="close" data-dismiss="modal">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                        >
                           <span aria-hidden="true">×</span>
                           <span class="sr-only">Close</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img id="image-gallery-image" class="img-responsive col-md-12" src />
+                        <img
+                          id="image-gallery-image"
+                          class="img-responsive col-md-12"
+                          src
+                        />
                       </div>
                       <div class="modal-footer">
                         <button
@@ -87,7 +104,7 @@
     </div>
   </div>
 </template>
-     
+
 <script>
 import axios from "axios";
 import Vue from "vue";
@@ -102,9 +119,10 @@ import eighteen from "./eighteen.vue";
 export default {
   data() {
     return {
-      selectedId: 0,
+      selectedId: 1,
       categories: [],
-      arr: []
+      arr: [],
+      sorting: -1
     };
   },
   methods: {
@@ -118,9 +136,7 @@ export default {
         .then(data => {
           if (data.data.length == 0) {
             this.arr = [];
-            console.log("empty");
           } else {
-            console.log("full");
             this.arr = data.data[0].acf.rotary_year_photos;
           }
         })
@@ -137,6 +153,13 @@ export default {
     seventeen,
     ninteen,
     PhotoContainer
+  },
+  computed: {
+    filteredList() {
+      return this.categories
+        .slice(0)
+        .sort((a, b) => (a.name < b.name ? -this.sorting : this.sorting));
+    }
   },
   mounted() {
     axios
@@ -261,16 +284,15 @@ export default {
 };
 </script>
 
-
 <style scoped>
 button {
   margin-right: 15px;
 }
 .btn-primary-blue {
-  border-color:#025198;
+  border-color: #025198;
   color: #025198;
 }
-.btn-primary-blue:hover{
+.btn-primary-blue:hover {
   background-color: #025198;
   color: #fff;
 }
@@ -303,7 +325,7 @@ button:active {
   height: 168px;
   object-fit: cover;
 }
-hr{
-background-color: #FAA72F;
+hr {
+  background-color: #faa72f;
 }
 </style>

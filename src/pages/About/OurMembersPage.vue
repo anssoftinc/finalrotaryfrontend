@@ -7,25 +7,27 @@
     <div class style="background:#f4f4f4">
       <div class="container">
         <div class="row mt-30">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item" v-for="item in listedmembers" :key="item" >
-          <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item" v-for="item in members" :key="item" > -->
+          <div
+            class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item"
+            v-for="item in listedmembers"
+          >
+            <!-- <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 item" v-for="item in members" :key="item" > -->
 
             <div class="custom-card">
               <div class="row my-3">
                 <div class="col-md-6 col-sm-6 col-6">
                   <div class="cards-image">
-                    <img v-lazy="imageBase+item.imageUrl" class="img-fluid" />
+                    <img v-lazy="imageBase + item.imageUrl" class="img-fluid" />
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-6">
                   <div class="custom-card-text">
-                    <h2 class="title">{{item.name}}</h2>
-                    <span class="post">{{item.title}}</span>
+                    <h2 class="title">{{ item.name }}</h2>
+                    <span class="post">{{ item.title }}</span>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -241,17 +243,21 @@ export default {
           imageUrl: "abhishek.jpg"
         }
       ],
-    }
-     },
-computed: {
-  listedmembers() {
-    return this.members.sort((a, b) => {
-      a.name - b.name
-    })
-  }
-}
-};
+      sorting: -1
+    };
+  },
 
+  computed: {
+    //   listedmembers() {
+    //    return _.orderBy(this.members, 'name')
+    // }
+    listedmembers() {
+      return this.members.sort((a, b) =>
+        a.name < b.name ? this.sorting : -this.sorting
+      );
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -291,8 +297,8 @@ computed: {
   color: #716b70;
   text-transform: uppercase;
 }
-hr{
+hr {
   /* background-color: #025198; */
-  background-color:#FAA72F
+  background-color: #faa72f;
 }
 </style>

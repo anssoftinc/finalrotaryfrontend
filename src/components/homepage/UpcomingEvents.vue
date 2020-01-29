@@ -2,7 +2,7 @@
   <div class="py-3" style="background:#f5f5f5; ">
     <div class="container">
       <div class="row no-marginLR">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-md-6">
           <div class="custom-card scrollbar" id="style-1">
             <div>
               <div class="card-custom-header py-3">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12">
+        <div class="col-md-6">
           <div class="row">
             <div class="col-md-12 card">
               <h2 class="mt-2 pt-2 text-center">
