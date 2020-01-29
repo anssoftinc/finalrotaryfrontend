@@ -2,7 +2,7 @@
   <header class>
     <div class="top-header">
       <div class="container py-1">
-        <div class="row justify-content-end align-items-center">
+        <div class="row justify-content-end align-items-center" id="links-header">
           <a href="https://www.facebook.com/RotaryClubOfKathmanduMidtown/" target="_blank">
             <i class="fab fa-facebook top-icons" aria-hidden="true"></i>
             <span class="icon-text">Connect With Us</span>
@@ -77,7 +77,7 @@
         </div>
       </nav>
 
-      <div class="mobile-nav py-2 shadow">
+      <div class="mobile-nav py-2 shadow" id="mobile-nav">
         <div class="container d-flex align-items-center mobile-header">
           <i class="fas fa-bars bars mr-3" @click="sidebarToggle"></i>
           <div class="d-flex justify-content-between" style="width:100%">
@@ -183,6 +183,20 @@ export default {
         navElement.classList.remove("fixed-top");
       }
     });
+    // 
+    var vm = this;
+    window.addEventListener("scroll", function(e) {
+      var scrollPos = window.scrollY;
+      var winHeight = window.innerHeight;
+      var navElement = document.getElementById("sticky-nav");
+      var navElement = document.getElementById("mobile-nav");
+      if (scrollPos > navElement.clientHeight) {
+        navElement.classList.add("fixed-top");
+      } else {
+        navElement.classList.remove("fixed-top");
+      }
+    });
+    // 
   },
   created() {
     this.navItems = this.$router.options.routes;
@@ -346,7 +360,7 @@ a:hover {
   text-decoration: none;
 }
 
-.mobile-nav {
+.mobile-nav, #mobile-nav {
   display: none;
 }
 
@@ -395,11 +409,23 @@ color: #025198;
   nav {
     display: none;
   }
-  .mobile-nav {
+  .mobile-nav, #mobile-nav {
     display: block;
+    z-index: 99999;
+    background-color: #fff;
+    width: 100%;
   }
   .logo {
     height: 50px;
   }
+  .justify-content-end a, .icon-text {
+    color: #fff;
+  }
+  .icon-text{
+    font-size: 13px;
+  }
+  a {
+  color: #025198;
+}
 }
 </style>
