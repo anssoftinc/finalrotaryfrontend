@@ -91,13 +91,6 @@
 <script>
 import axios from "axios";
 import Vue from "vue";
-import PhotoContainer from "./PhotoContainer";
-import ninteen from "./ninteen.vue";
-import thirteen from "./thirteen.vue";
-import fourteen from "./fourteen.vue";
-import fifteen from "./fifteen.vue";
-import seventeen from "./seventeen.vue";
-import eighteen from "./eighteen.vue";
 
 export default {
   data() {
@@ -128,15 +121,7 @@ export default {
         });
     }
   },
-  components: {
-    eighteen,
-    thirteen,
-    fourteen,
-    fifteen,
-    seventeen,
-    ninteen,
-    PhotoContainer
-  },
+  components: {},
   computed: {
     filteredList() {
       return this.categories
@@ -145,14 +130,13 @@ export default {
     }
   },
   mounted() {
-
     axios
       .get(
         "https://rotaryclubkathmandumid-town.org/admin/wp-json/wp/v2/year_category"
       )
       .then(data => {
         this.categories = data.data;
-        this.changeSelection(this.categories[this.categories.length-1].id);
+        this.changeSelection(this.categories[this.categories.length - 1].id);
       })
       .catch(error => {
         console.log(error);

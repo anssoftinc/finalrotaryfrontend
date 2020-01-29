@@ -8,7 +8,6 @@ import About from './pages/About/About.vue'
 import AboutClubPage from './pages/About/AboutClubPage.vue'
 import OurBoardPage from './pages/About/OurBoardPage.vue'
 import OurMembersPage from './pages/About/OurMembersPage.vue'
-import ShortHistoryPage from './pages/About/ShortHistoryPage.vue'
 import SponsoredClubsPage from './pages/About/SponsoredClubsPage.vue'
 import MeetingInfo from "./pages/About/MeetingInfo.vue"
 import CharteredMembers from "./pages/About/OurCharterMember.vue"
@@ -16,7 +15,6 @@ import CharteredMembers from "./pages/About/OurCharterMember.vue"
 //archives section
 import Archives from "./pages/Archives/Archives.vue"
 import BriefHistoryPage from './pages/Archives/BriefHistoryPage.vue'
-import DistrictAwardsPage from './pages/Archives/DistrictAwardsPage.vue'
 import PastPresidentsPage from './pages/Archives/PastPresidentsPage.vue'
 import RotaryYearPage from './pages/Archives/RotaryYearPage.vue'
 
@@ -45,13 +43,9 @@ import LookingForFunding from "./pages/Projects/LookingForFunding.vue"
 
 
 
-
-//rotary year section
-import RotaryYearlyPage from './pages/RotaryYear/RotaryYearlyPage.vue'
 //youth force section
 import InteractsPage from './pages/YouthForce/InteractsPage.vue'
 import RotractsPage from './pages/YouthForce/RotractsPage.vue'
-import BrochuresPage from './pages/YouthForce/BrochuresPage.vue'
 import VideosPage from './pages/YouthForce/VideosPage.vue'
 
 import NewsAndUpdates from "./pages/NewsAndUpdates.vue"

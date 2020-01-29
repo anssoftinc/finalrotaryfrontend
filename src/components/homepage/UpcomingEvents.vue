@@ -83,7 +83,7 @@
               <center>
                 <iframe
                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRotaryClubOfKathmanduMidtown%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=454191771605285"
-                  width="600"
+                  width="100%"
                   height="300"
                   style="border:none;overflow:hidden"
                   scrolling="no"
@@ -209,7 +209,7 @@ export default {
 }
 .card-custom-header {
   padding: 10px;
-  color: #FAA72F;
+  color: #faa72f;
   /* background: var(--azure); */
   /* background: #faa933; */
   /* background: #2ecc70; */
@@ -280,8 +280,8 @@ export default {
   align-items: center;
 }
 
- hr {
-  border-color: #FAA72F;
+hr {
+  border-color: #faa72f;
 }
 
 .read-more {

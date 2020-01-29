@@ -11,12 +11,10 @@
 
 <script>
 import NavHeader from "@/components/common/Header";
-import Sidebar from "@/components/common/Sidebar";
 import MainFooter from "@/components/common/Footer";
 export default {
   components: {
     NavHeader,
-    Sidebar,
     MainFooter
   },
 
@@ -50,7 +48,7 @@ export default {
   transition: all 0.5s;
 }
 span i {
-  color: #FAA72F
+  color: #faa72f;
 }
 .my-float {
   margin-top: 22px;

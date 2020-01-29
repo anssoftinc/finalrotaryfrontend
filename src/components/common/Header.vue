@@ -55,24 +55,28 @@
                 <router-link to="/">Home</router-link>
               </li>
             </ul>
-            <div v-for="item in navItems" :key="item.id" v-if="!item.hide" class="nav-item">
-              <ul>
-                <li class="nav-header">
-                  <a style="text-decoration:none;color:#5E717D;cursor:context-menu">{{item.name}}</a>
-                </li>
-                <div v-if="dropStatus">
-                  <li
-                    v-for="child in item.children"
-                    :key="child.id"
-                    class="nav-child child"
-                    @click="dropOffEvent"
-                  >
-                    <!-- <router-link :to="`${item.path}/${child.path}`">{{child.name}}</router-link> -->
-                    <router-link :to="{ name: child.name, hash: child.hash }">{{child.name}}</router-link>
+            
+              <div v-for="item in navItems" :key="item.id" v-if="!item.hide" class="nav-item">
+                <transition name="slide-fade">
+                <ul>
+                  <li class="nav-header">
+                    <a style="text-decoration:none;color:#5E717D;cursor:context-menu">{{item.name}}</a>
                   </li>
-                </div>
-              </ul>
-            </div>
+                  <div v-if="dropStatus">
+                    <li
+                      v-for="child in item.children"
+                      :key="child.id"
+                      class="nav-child child"
+                      @click="dropOffEvent"
+                    >
+                      <!-- <router-link :to="`${item.path}/${child.path}`">{{child.name}}</router-link> -->
+                      <router-link :to="{ name: child.name, hash: child.hash }">{{child.name}}</router-link>
+                    </li>
+                  </div>
+                </ul>
+                  </transition>
+              </div>
+          
           </div>
         </div>
       </nav>
@@ -183,7 +187,7 @@ export default {
         navElement.classList.remove("fixed-top");
       }
     });
-    // 
+    //
     var vm = this;
     window.addEventListener("scroll", function(e) {
       var scrollPos = window.scrollY;
@@ -196,7 +200,7 @@ export default {
         navElement.classList.remove("fixed-top");
       }
     });
-    // 
+    //
   },
   created() {
     this.navItems = this.$router.options.routes;
@@ -216,12 +220,12 @@ export default {
 .top-header {
   background: var(--azure);
 }
-.justify-content-end a{
-  color:#025198;
+.justify-content-end a {
+  color: #025198;
 }
 .icon-text {
   /* color: #fff; */
-  color:#025198;
+  color: #025198;
   font-size: 14px;
   margin-right: 10px;
   margin-left: 10px;
@@ -360,7 +364,8 @@ a:hover {
   text-decoration: none;
 }
 
-.mobile-nav, #mobile-nav {
+.mobile-nav,
+#mobile-nav {
   display: none;
 }
 
@@ -394,10 +399,9 @@ a:hover {
   display: none;
   overflow: hidden;
 }
-ul li a:hover{
-color: #025198;
+ul li a:hover {
+  color: #025198;
 }
-
 
 @media only screen and (max-width: 1004px) {
   .top-header {
@@ -409,7 +413,8 @@ color: #025198;
   nav {
     display: none;
   }
-  .mobile-nav, #mobile-nav {
+  .mobile-nav,
+  #mobile-nav {
     display: block;
     z-index: 99999;
     background-color: #fff;
@@ -418,14 +423,15 @@ color: #025198;
   .logo {
     height: 50px;
   }
-  .justify-content-end a, .icon-text {
+  .justify-content-end a,
+  .icon-text {
     color: #fff;
   }
-  .icon-text{
+  .icon-text {
     font-size: 13px;
   }
   a {
-  color: #025198;
-}
+    color: #025198;
+  }
 }
 </style>

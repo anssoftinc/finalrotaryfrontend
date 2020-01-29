@@ -6,12 +6,10 @@
 
 <script>
 import NavHeader from "@/components/common/Header";
-import Sidebar from "@/components/common/Sidebar";
 import MainFooter from "@/components/common/Footer";
 export default {
   components: {
     NavHeader,
-    Sidebar,
     MainFooter
   }
 };

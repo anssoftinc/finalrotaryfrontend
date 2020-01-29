@@ -1,45 +1,45 @@
 <template>
-<div class="container-blog">
-  <div class="container py-5">
-    <!-- my-5 -->
-    <section class="blog-me" id="blog">
-      <div class="section-title">
-        <h1>News & Updates</h1>
-        <router-link to="/news-updates/all" class="read-more-view">View All</router-link>
-      </div> 
-      <hr />
-<br>
-      <div class="row ">
-        <div class="col-lg-4 col-md-6" v-for="(item,index) in filteredItems" :key="index">
-          <!-- Single Blog -->
-          <div class="single-blog">
-            <div class="blog-img">
-              <img :src="item.acf.image.url" alt />
-            </div>
-            <div class="blog-content">
-              <div class="blog-title">
-                <div class="title">
-                  <h2 v-html="item.title.rendered"></h2>
-                </div>
-                <div class="meta">
-                  <ul>
-                    <!-- <li>{{item.acf.date}}</li> -->
-                  </ul>
-                </div>
+  <div class="container-blog">
+    <div class="container py-5">
+      <!-- my-5 -->
+      <section class="blog-me" id="blog">
+        <div class="section-title">
+          <h1>News & Updates</h1>
+          <router-link to="/news-updates/all" class="read-more-view">View All</router-link>
+        </div>
+        <hr />
+        <br />
+        <div class="row">
+          <div class="col-lg-4 col-md-6" v-for="(item,index) in filteredItems" :key="index">
+            <!-- Single Blog -->
+            <div class="single-blog">
+              <div class="blog-img">
+                <img :src="item.acf.image.url" alt />
               </div>
-              <div class="summary">
-                <p v-html="item.acf.description" class="summary-text"></p>
-              </div>
-              <div class="read-more mt-1">
-                <i class="fas fa-external-link-alt mr-2"></i>
-                <router-link :to="'news-updates/'+item.id">Read More</router-link>
+              <div class="blog-content">
+                <div class="blog-title">
+                  <div class="title">
+                    <h2 v-html="item.title.rendered"></h2>
+                  </div>
+                  <div class="meta">
+                    <ul>
+                      <!-- <li>{{item.acf.date}}</li> -->
+                    </ul>
+                  </div>
+                </div>
+                <div class="summary">
+                  <p v-html="item.acf.description" class="summary-text"></p>
+                </div>
+                <div class="read-more mt-1">
+                  <i class="fas fa-external-link-alt mr-2"></i>
+                  <router-link :to="'news-updates/'+item.id">Read More</router-link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -59,7 +59,6 @@ export default {
 
   mounted() {
     this.$API.getNews().then(data => {
-      console.log(data.data);
       this.news = data.data;
     });
   }
@@ -68,7 +67,7 @@ export default {
 
 
 <style scoped>
-.container-blog{
+.container-blog {
   /* background-color:#FAA72F;  */
 }
 /* .container-blog-me{
@@ -108,7 +107,7 @@ a {
   /* padding-bottom: 20px; */
   display: inline-block;
 }
-.section-title h1{
+.section-title h1 {
   color: #025198;
 }
 /* .section-title h4::before {
@@ -221,22 +220,22 @@ a.box_btn:hover::before {
   color: #025198;
   display: table;
   padding-top: 9px;
-    height: 42px;
-    padding-bottom: 7px;
+  height: 42px;
+  padding-bottom: 7px;
 }
-.read-more:hover{
-  border-bottom: 1px solid #FAA72F;
+.read-more:hover {
+  border-bottom: 1px solid #faa72f;
 }
-.read-more-view{
+.read-more-view {
   /* border-bottom: 1px solid #fff; */
   color: #777;
   float: right;
-  margin-top:-25px;
+  margin-top: -25px;
   /* line-height: -152px; */
   font-size: 14px;
 }
-.read-more-view:hover{
-  color:#025198;
+.read-more-view:hover {
+  color: #025198;
 }
 .read-more a {
   color: var(--primary-red);
@@ -251,11 +250,12 @@ a.box_btn:hover::before {
 .summary-text p img {
   display: none !important;
 }
-.read-more, .read-more a{
-  color: #FAA72F;
-} 
+.read-more,
+.read-more a {
+  color: #faa72f;
+}
 hr {
-  background-color: #FAA72F;
+  background-color: #faa72f;
   /* height: 0.5px; */
 }
 </style>

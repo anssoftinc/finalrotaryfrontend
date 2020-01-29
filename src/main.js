@@ -3,10 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import VueCarousel from 'vue-carousel';
-Vue.use(VueCarousel);
 
 import VueLazyload from 'vue-lazyload'
+import VueScrollTo from 'vue-scrollto'
+import APIService from "./api/api";
+
+
 
 Vue.use(VueLazyload)
 
@@ -19,21 +21,11 @@ Vue.use(VueLazyload, {
 })
 
 Vue.component('pulse-loader', require('vue-spinner/src/PulseLoader.vue'));
-
-import VueToastr2 from 'vue-toastr-2'
-import 'vue-toastr-2/dist/vue-toastr-2.min.css'
-
 window.toastr = require('toastr')
 
-Vue.use(VueToastr2)
 
-import VueScrollTo from 'vue-scrollto'
 Vue.use(VueScrollTo)
-
-import APIService from "./api/api";
 Vue.prototype.$API = new APIService();
-
-
 
 Vue.config.productionTip = false
 
