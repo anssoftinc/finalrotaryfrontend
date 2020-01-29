@@ -231,7 +231,7 @@ export default {
           imageUrl: "weise.jpg"
         },
         {
-          name: "Nirmal Rijan",
+          name: "Nirmal Rijal",
           imageUrl: "nirmal.jpg"
         },
         {
