@@ -3,10 +3,10 @@
       <b>After:</b>
       <br />
   <img src="/images/our-projects/navakiran2.png" class="img-fluid" />-->
-  <div class="container mt-3" id="top">
+  <div class="container" id="top">
     <div class="custom-card">
       <div class="row">
-        <div class="col-md-12 p-3">
+        <div class="col-md-12 ">
           <h4>NavaKiran Helpless and Orphaned Children Society</h4>
           <p class="text-justify">
             NavaKiran Helpless and Orphaned Children Society is a charity organization that protects, shelters, and educates 42 needy and orphaned children; it is located in Dhapakhel, Lalitpur, Nepal.
@@ -57,7 +57,7 @@ export default {};
 }
 
 .custom-card {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 15px 15px;
   background: #fff;
 }

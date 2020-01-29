@@ -169,11 +169,15 @@
     <p id="immediate-relief"></p>
     <div class="custom-card">
       <div class="row">
-        <div class="col-md-4 text-center">
+        <!-- <div class="col-md-3 text-center">
           <img src="/images/our-projects/Immediate-relief-1.jpg" class="img-fluid" alt />
           <img src="/images/our-projects/Immediate-relief-2.jpg" class="img-fluid" alt />
         </div>
-        <div class="col-md-8">
+          <div class="col-md-3 text-center">
+          <img src="/images/our-projects/Immediate-relief-1.jpg" class="img-fluid" alt />
+          <img src="/images/our-projects/Immediate-relief-2.jpg" class="img-fluid" alt />
+        </div> -->
+        <div class="col-md-12">
           <h4>Immediate relief after the earthquake</h4>
 
           <p
@@ -183,20 +187,34 @@
             class="text-justify"
           >In the three weeks following the earthquake, we distributed tents and tarpaulins to affected districts as follows: Sindhupalchowk: 450; Gorkha: 350; Kavre: 170; Nuwakot: 94; Makwanpur: 50; Kathmandu: 75; and Dhading: 100. Most of these items, together with 150 solar lamps (donated by UNHCR), were delivered by truck, while some transport was donated, in most cases RC KTM Mid-Town paid for the transport. In one case, where the roads were blocked and we heard the situation was dire, we delivered some 150 tents to the most affected areas in Sindupalchowk by helicopter. See full details in First Earthquake Relief Assistance Report, May 2015.</p>
           <a href="/images/our-projects/first-report.pdf" target="_blank">See Detailed Report</a>
-          <div class="row pt-3">
+          <!-- <div class="row pt-3">
             <div class="col-md-6">
               <img src="/images/our-projects/Immediate-relief-3.jpg" class="img-fluid" alt />
             </div>
             <div class="col-md-6">
               <img src="/images/our-projects/Immediate-relief-4.jpg" class="img-fluid" alt />
             </div>
-          </div>
+          </div> -->
+        </div>
+        <div class="row px-3 mt-2">
+   <div class="col-md-3 text-center">
+          <img src="/images/our-projects/Immediate-relief-1.jpg" class="img-fluid" alt />
+        </div>
+          <div class="col-md-3 text-center">
+                   <img src="/images/our-projects/Immediate-relief-2.jpg" class="img-fluid" alt />
+        </div>
+         <div class="col-md-3">
+              <img src="/images/our-projects/Immediate-relief-3.jpg" class="img-fluid" alt />
+            </div>
+            <div class="col-md-3">
+              <img src="/images/our-projects/Immediate-relief-4.jpg" class="img-fluid" alt />
+            </div>
         </div>
       </div>
     </div>
 
     <p id="section-coffee"></p>
-    <div class="custom-card">
+    <div class="custom-card mt-4">
       <div class="row">
         <div class="col-md-4 text-center">
           <img src="/images/our-projects/coffee-project.jpg" class="img-fluid" alt />
@@ -218,10 +236,11 @@
     <p id="gulmi"></p>
     <div class="custom-card">
       <div class="row">
-        <div class="col-md-4 text-center">
+        <!-- <div class="col-md-4 text-center">
           <img src="/images/our-projects/gulmi-1.jpg" class="img-fluid" alt />
-        </div>
-        <div class="col-md-8">
+           <img src="/images/our-projects/gulmi-2.jpg" class="img-fluid" alt />
+        </div> -->
+        <div class="col-md-12">
           <h4>Shree Amarpur Om Prasad Gautam Higher Secondary School in Gulmi</h4>
 
           <p
@@ -235,12 +254,17 @@
             As a result of all this, nearly 450 students (250 girls and 200 boys) and about 20 teachers and staff are now able to use the reconstructed premises to ensure basic education in this remote, needy community.
           </p>
           <div class="row">
-            <div class="col-md-6">
+                 <div class="col-md-4">
+          <img src="/images/our-projects/gulmi-1.jpg" class="img-fluid" alt />
+
+            </div>
+            <div class="col-md-4">
               <img src="/images/our-projects/gulmi-2.jpg" class="img-fluid" alt />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <img src="/images/our-projects/gulmi-3.jpg" class="img-fluid" alt />
             </div>
+       
           </div>
         </div>
       </div>
@@ -261,7 +285,7 @@
     <div class="custom-card">
       <div class="row">
         <div class="col-md-4">
-          <img src="/images/our-projects/parbati-2.jpg" class="img-fluid" />
+          <img src="/images/our-projects/parbati-2.jpg" class="img-fluid"  style="height:250px;"/>
         </div>
         <div class="col-md-8 p-3">
           <h4>Parbati School, Dhungkhadka, Kavre</h4>
@@ -277,7 +301,7 @@
       <div class="row mt-3">
         <div class="col-md-4">
           <h2>Before:</h2>
-          <img src="/images/our-projects/parbati-1.jpg" class="img-fluid" />
+          <img src="/images/our-projects/parbati-1.jpg" class=" parbati-school-img img-fluid" />
         </div>
         <div class="col-md-4">
           <h2>After:</h2>
@@ -316,7 +340,7 @@
     <div class="custom-card">
       <div class="row">
         <div class="col-md-4 text-center">
-          <img src="/images/our-projects/bungmati1.jpg" class="img-fluid" alt />
+          <img src="/images/our-projects/bungamati_new.jpg" class="img-fluid" alt />
         </div>
         <div class="col-md-8 p-3">
           <h4>Bungamati School</h4>
@@ -325,7 +349,7 @@
             Tri-Ratna Cooperative School, Bungamati – was established in 1992; it educates 232 children from the disadvantaged communities of Bungamati and neighboring villages (Chunikhel, Farsidole, Dukuchhap, Chhampi, Sainbu). It was very badly hit during the 2015 earthquake.
             <br />This project is in collaboration with our Rotary District 3292’s ERRRP (Earthquake Relief, Rehabilitation and Reconstruction Program) and the Rotary Club of Nanaimo Daybreak, Canada.
           </p>
-          <img src="/images/our-projects/bungmati-logo.jpg" width="120" />
+          <!-- <img src="/images/our-projects/bungmati-logo.jpg" width="120" /> -->
         </div>
       </div>
       <div class="row">
@@ -349,8 +373,13 @@
         <div class="col-md-6">
           <img src="/images/our-projects/bungmatiteam.jpg" class="img-fluid text-center" />
         </div>
+        <div class="col-md-3">
+           <img src="/images/our-projects/bungmati1.jpg" class="img-fluid" alt />
+        </div>
       </div>
     </div>
+
+    <!--  <img src="/images/our-projects/bungmati1.jpg" class="img-fluid" alt /> -->
 
     <p id="kanti"></p>
     <div class="custom-card">
@@ -451,6 +480,7 @@ hr{
 a:hover{
 text-decoration-color: #FAA72F;
 }
+.parbati-school-img{
+height: 237px;
+}
 </style>
-
-
