@@ -55,28 +55,24 @@
                 <router-link to="/">Home</router-link>
               </li>
             </ul>
-            
-              <div v-for="item in navItems" :key="item.id" v-if="!item.hide" class="nav-item">
-                <transition name="slide-fade">
-                <ul>
-                  <li class="nav-header">
-                    <a style="text-decoration:none;color:#5E717D;cursor:context-menu">{{item.name}}</a>
+
+            <div v-for="item in navItems" :key="item.id" v-show="!item.hide" class="nav-item">
+              <ul>
+                <li class="nav-header">
+                  <a style="text-decoration:none;color:#5E717D;cursor:context-menu">{{item.name}}</a>
+                </li>
+                <div v-if="dropStatus">
+                  <li
+                    v-for="child in item.children"
+                    :key="child.id"
+                    class="nav-child child"
+                    @click="dropOffEvent"
+                  >
+                    <router-link :to="{ name: child.name, hash: child.hash }">{{child.name}}</router-link>
                   </li>
-                  <div v-if="dropStatus">
-                    <li
-                      v-for="child in item.children"
-                      :key="child.id"
-                      class="nav-child child"
-                      @click="dropOffEvent"
-                    >
-                      <!-- <router-link :to="`${item.path}/${child.path}`">{{child.name}}</router-link> -->
-                      <router-link :to="{ name: child.name, hash: child.hash }">{{child.name}}</router-link>
-                    </li>
-                  </div>
-                </ul>
-                  </transition>
-              </div>
-          
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

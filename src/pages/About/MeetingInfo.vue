@@ -2,7 +2,7 @@
   <div class="meeetingInfo">
     <div class="container">
       <h1 class="text-left">Meeting Information</h1>
-      <hr />
+
       <table class="table table-center col-md-8">
         <tr>
           <td>Official Name</td>
@@ -61,13 +61,12 @@ tr > :first-child {
   width: 250px;
   /* border-bottom-color:#FAA72F; */
 }
-tr{
-  background-color: #FAA72F;
+tr {
 }
-hr{
+hr {
   background-color: #025198;
 }
-a{
+a {
   color: #025198;
 }
 </style>
