@@ -23,7 +23,7 @@
                 </div>
                 <div class="meta">
                   <ul>
-                    <li>{{item.acf.date}}</li>
+                    <!-- <li>{{item.acf.date}}</li> -->
                   </ul>
                 </div>
               </div>
