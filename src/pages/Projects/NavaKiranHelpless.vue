@@ -3,7 +3,7 @@
       <b>After:</b>
       <br />
   <img src="/images/our-projects/navakiran2.png" class="img-fluid" />-->
-  <div class="container" id="top">
+  <div class="containe-r" id="top">
     <div class="custom-card">
       <div class="row">
         <div class="col-md-12 ">
