@@ -233,9 +233,13 @@ button:focus {
     outline-width: 0;
     outline-color: #025198;
 }
-.rotary-club-contact-us, .google-map-link{
-  font-size: 15px;
-  color:#777;
+.rotary-club-contact-us{
+  font-size: 22px;
+  color:#025198;
+}
+.google-map-link{
+  font-size: 17px;
+    color:#025198;
 }
 .rotary-club-contact-us:hover, .google-map-link:hover{
   text-decoration-color: #FAA72F
