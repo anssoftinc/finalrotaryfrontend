@@ -7,7 +7,7 @@
       <button
         v-for="cat in filteredList"
         :key="cat.id"
-        class="btn btn-primary-blue"
+        class="btn btn-primary-blue button-rotary-photos"
         @click="changeSelection(cat.id)"
         :class="selectedId == cat.id ? 'active' : ''"
       >{{ cat.name }}</button>
@@ -295,5 +295,8 @@ button:active {
 }
 hr {
   background-color: #faa72f;
+}
+.button-rotary-photos{
+  margin-bottom: 10px;
 }
 </style>
