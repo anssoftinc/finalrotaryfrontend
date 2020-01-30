@@ -21,21 +21,23 @@
                 <div class="row">
                   <div
                     class="col-lg-3 col-md-4 col-xs-6 thumb filter retratos"
-                    v-for="image in arr"
+                    v-for="(image,index) in arr"
                     :key="image.url"
                   >
-                    <a
-                      class="thumbnail"
-                      href="#"
-                      data-image-id
-                      data-toggle="modal"
-                      data-title
-                      :data-image="image.url"
-                      :data-target="`#image-gallery`"
-                      style="object-fit:cover;"
-                    >
-                      <img class="img-thumbnail" v-lazy="image.url" alt="Retratos" />
-                    </a>
+                    <div class="img-container d-flex justify-content-center align-items-center">
+                      <a
+                        class
+                        href="#"
+                        data-image-id
+                        data-toggle="modal"
+                        data-title
+                        :data-image="image.url"
+                        :data-target="`#image-gallery`"
+                        @click="imageClicked(index)"
+                      >
+                        <img v-lazy="image.url" alt="Retratos" class="img-fluid" />
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -47,7 +49,7 @@
                   aria-labelledby="myModalLabel"
                   aria-hidden="true"
                 >
-                  <div class="modal-dialog modal-lg">
+                  <div class="modal-dialog modal-lg" v-if="arr.length>0">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title" id="image-gallery-title"></h4>
@@ -57,13 +59,18 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img id="image-gallery-image" class="img-responsive col-md-12" src />
+                        <img
+                          id="image-gallery-image"
+                          class="img-responsive col-md-12"
+                          :src="arr[currentIndex].url"
+                        />
                       </div>
                       <div class="modal-footer">
                         <button
                           type="button"
                           class="btn btn-secondary float-left"
                           id="show-previous-image"
+                          @click="prev()"
                         >
                           <i class="fa fa-arrow-left"></i>
                         </button>
@@ -72,6 +79,7 @@
                           type="button"
                           id="show-next-image"
                           class="btn btn-secondary float-right"
+                          @click="next()"
                         >
                           <i class="fa fa-arrow-right"></i>
                         </button>
@@ -97,11 +105,26 @@ export default {
     return {
       selectedId: 1,
       categories: [],
+
+      currentIndex: 0,
       arr: [],
       sorting: -1
     };
   },
   methods: {
+    imageClicked(index) {
+      this.currentIndex = index;
+    },
+    next() {
+      if (this.currentIndex <= this.arr.length) {
+        this.currentIndex = this.currentIndex + 1;
+      }
+    },
+    prev() {
+      if (this.currentIndex > 0) {
+        this.currentIndex = this.currentIndex - 1;
+      }
+    },
     changeSelection(id) {
       this.selectedId = id;
       axios
@@ -130,6 +153,7 @@ export default {
     }
   },
   mounted() {
+    let vm = this;
     axios
       .get(
         "https://rotaryclubkathmandumid-town.org/admin/wp-json/wp/v2/year_category"
@@ -142,112 +166,114 @@ export default {
         console.log(error);
       });
 
-    this.$nextTick(() => {
-      Vue.addScript(
-        "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-      );
-      let modalId = $("#image-gallery");
+    setTimeout(function() {
+      vm.$nextTick(() => {
+        Vue.addScript(
+          "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        );
+        let modalId = $("#image-gallery");
 
-      loadGallery(true, "a.thumbnail");
+        loadGallery(true, "a.thumbnail");
 
-      //This function disables buttons when needed
-      function disableButtons(counter_max, counter_current) {
-        $("#show-previous-image, #show-next-image").show();
-        if (counter_max === counter_current) {
-          $("#show-next-image").hide();
-        } else if (counter_current === 1) {
-          $("#show-previous-image").hide();
+        //This function disables buttons when needed
+        function disableButtons(counter_max, counter_current) {
+          $("#show-previous-image, #show-next-image").show();
+          if (counter_max === counter_current) {
+            $("#show-next-image").hide();
+          } else if (counter_current === 1) {
+            $("#show-previous-image").hide();
+          }
         }
-      }
 
-      /**
-       *
-       * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-       * @param setClickAttr  Sets the attribute for the click handler.
-       */
+        /**
+         *
+         * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+         * @param setClickAttr  Sets the attribute for the click handler.
+         */
 
-      function loadGallery(setIDs, setClickAttr) {
-        let current_image,
-          selector,
-          counter = 0;
+        function loadGallery(setIDs, setClickAttr) {
+          let current_image,
+            selector,
+            counter = 0;
 
-        $("#show-next-image, #show-previous-image").click(function() {
-          if ($(this).attr("id") === "show-previous-image") {
-            current_image--;
-          } else {
-            current_image++;
+          $("#show-next-image, #show-previous-image").click(function() {
+            if ($(vm).attr("id") === "show-previous-image") {
+              current_image--;
+            } else {
+              current_image++;
+            }
+
+            selector = $('[data-image-id="' + current_image + '"]');
+            updateGallery(selector);
+          });
+
+          function updateGallery(selector) {
+            let $sel = selector;
+            current_image = $sel.data("image-id");
+            $("#image-gallery-title").text($sel.data("title"));
+            $("#image-gallery-image").attr("src", $sel.data("image"));
+            disableButtons(counter, $sel.data("image-id"));
           }
 
-          selector = $('[data-image-id="' + current_image + '"]');
-          updateGallery(selector);
-        });
-
-        function updateGallery(selector) {
-          let $sel = selector;
-          current_image = $sel.data("image-id");
-          $("#image-gallery-title").text($sel.data("title"));
-          $("#image-gallery-image").attr("src", $sel.data("image"));
-          disableButtons(counter, $sel.data("image-id"));
-        }
-
-        if (setIDs == true) {
-          $("[data-image-id]").each(function() {
-            counter++;
-            $(this).attr("data-image-id", counter);
+          if (setIDs == true) {
+            $("[data-image-id]").each(function() {
+              counter++;
+              $(vm).attr("data-image-id", counter);
+            });
+          }
+          $(setClickAttr).on("click", function() {
+            updateGallery($(vm));
           });
         }
-        $(setClickAttr).on("click", function() {
-          updateGallery($(this));
+
+        // build key actions
+        $(document).keydown(function(e) {
+          switch (e.which) {
+            case 37: // left
+              if (
+                (modalId.data("bs.modal") || {})._isShown &&
+                $("#show-previous-image").is(":visible")
+              ) {
+                $("#show-previous-image").click();
+              }
+              break;
+
+            case 39: // right
+              if (
+                (modalId.data("bs.modal") || {})._isShown &&
+                $("#show-next-image").is(":visible")
+              ) {
+                $("#show-next-image").click();
+              }
+              break;
+
+            default:
+              return; // exit vm handler for other keys
+          }
+          e.preventDefault(); // prevent the default action (scroll / move caret)
         });
-      }
 
-      // build key actions
-      $(document).keydown(function(e) {
-        switch (e.which) {
-          case 37: // left
-            if (
-              (modalId.data("bs.modal") || {})._isShown &&
-              $("#show-previous-image").is(":visible")
-            ) {
-              $("#show-previous-image").click();
-            }
-            break;
+        //Filter Button
 
-          case 39: // right
-            if (
-              (modalId.data("bs.modal") || {})._isShown &&
-              $("#show-next-image").is(":visible")
-            ) {
-              $("#show-next-image").click();
-            }
-            break;
+        $(".filter-button").click(function() {
+          var value = $(vm).attr("data-filter");
 
-          default:
-            return; // exit this handler for other keys
-        }
-        e.preventDefault(); // prevent the default action (scroll / move caret)
+          if (value == "todo") {
+            //$('.filter').removeClass('hidden');
+            $(".filter").show("1000");
+          } else {
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter")
+              .not("." + value)
+              .hide("3000");
+            $(".filter")
+              .filter("." + value)
+              .show("3000");
+          }
+        });
       });
-
-      //Filter Button
-
-      $(".filter-button").click(function() {
-        var value = $(this).attr("data-filter");
-
-        if (value == "todo") {
-          //$('.filter').removeClass('hidden');
-          $(".filter").show("1000");
-        } else {
-          //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-          //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-          $(".filter")
-            .not("." + value)
-            .hide("3000");
-          $(".filter")
-            .filter("." + value)
-            .show("3000");
-        }
-      });
-    });
+    }, 500);
   }
 };
 </script>
@@ -288,15 +314,26 @@ button:active {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.img-thumbnail {
+.img-container {
   width: 262px;
   height: 168px;
+  /* object-fit: cover;
+  overflow: hidden; */
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 0.5px;
+}
+
+.img-container img {
+  width: 262px;
+  height: 168px;
+  /* padding: 5px; */
   object-fit: cover;
 }
 hr {
   background-color: #faa72f;
 }
-.button-rotary-photos{
+.button-rotary-photos {
   margin-bottom: 10px;
 }
 </style>
