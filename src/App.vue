@@ -47,8 +47,13 @@ export default {
   transform: scale(1.1);
   transition: all 0.5s;
 }
+
+span {
+  box-shadow: 3px 3px 5px grey;
+}
+
 span i {
-  color: #faa72f;
+  color: var(--rotary-gold);
 }
 .my-float {
   margin-top: 22px;

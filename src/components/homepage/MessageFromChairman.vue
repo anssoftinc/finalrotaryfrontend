@@ -23,7 +23,7 @@
             </a>
           </div>
         </div>
-        <hr class="neeva-hr"/>
+        <hr class="neeva-hr" />
 
         <p id="neeva"></p>
         <div class="row section">
@@ -55,7 +55,10 @@
             <h2 class="my-3 name">Kiran Lal Shrestha - District Governor</h2>
             <p
               class="text-justify"
-            >To connect the world, we must engage our members in service projects for the needy communities and fellowship among the members and with our families. Bringing our family and children into Rotary will definitely add to Rotary's values within our family. In Rotary, leadership is only for one year, so within these 366 days, you have to plan everything from club activities to membership activities and serving a needy community to fellowship among Rotarians and family, so please plan properly and make it like fun and dance, then only can you enjoy Rotary and you will be able to connect yourself with your family, club members and community.</p>
+            >To connect the world, we must engage our members in service projects for the needy communities and fellowship among the members and with our families. Bringing our family and children into Rotary will definitely add to Rotary's values within our family.</p>
+            <p
+              class="text-justify"
+            >In Rotary, leadership is only for one year, so within these 366 days, you have to plan everything from club activities to membership activities and serving a needy community to fellowship among Rotarians and family, so please plan properly and make it like fun and dance, then only can you enjoy Rotary and you will be able to connect yourself with your family, club members and community.</p>
           </div>
         </div>
         <hr />
@@ -113,8 +116,8 @@ export default {
   font-size: 24px;
   /* color: #343a40 !important; */
 }
-hr{
-  background-color: #FAA72F;
+hr {
+  background-color: #faa72f;
 }
 .message-name {
   cursor: pointer;
@@ -122,7 +125,7 @@ hr{
 
 .btn-messages {
   /* color: var(--primary-blue); */
-  color:#025198;
+  color: #025198;
   text-decoration: none;
   border: 1px solid;
   font-size: 16px;
@@ -144,8 +147,7 @@ hr{
   text-decoration: none;
   color: #fff;
   /* background: var(--primary-blue); */
-   background: #025198;
-
+  background: #025198;
 }
 
 a {

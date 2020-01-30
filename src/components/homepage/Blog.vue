@@ -5,7 +5,7 @@
       <section class="blog-me" id="blog">
         <div class="section-title">
           <h1>News & Updates</h1>
-          <router-link to="/news-updates/all" class="read-more-view">View All</router-link>
+          <router-link to="/news-updates/all" class="read-more">View All</router-link>
         </div>
         <hr />
         <br />

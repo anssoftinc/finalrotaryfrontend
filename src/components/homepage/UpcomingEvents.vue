@@ -1,5 +1,5 @@
 <template>
-  <div class="py-3" style="background:#f5f5f5; ">
+  <div class="py-5" style="background:#f5f5f5; ">
     <div class="container">
       <div class="row no-marginLR">
         <div class="col-md-6">
@@ -36,20 +36,20 @@
                 </div>-->
                 <div class="events container" v-for="(ev,index) in sortedEvents" :key="index">
                   <div v-if="compareDate(ev.acf.event_date)">
-                    <p class="event-title">{{ev.acf.event_name}}</p>
+                    <p class="event-title mb-3">{{ev.acf.event_name}}</p>
                     <p class="event-timing">
-                      <i class="fas fa-calendar-week text-white mr-1"></i>
+                      <i class="fas fa-calendar-week events-icon mr-2"></i>
                       {{ev.acf.event_date}}
                       <span
                         v-if="ev.acf.event_end_date"
                       >To {{ev.acf.event_end_date}}</span>
                     </p>
                     <p class="event-timing">
-                      <i class="fas fa-map-marker-alt text-white mr-1"></i>
+                      <i class="fas fa-map-marker-alt events-icon mr-2"></i>
                       Location: {{ev.acf.venue}}
                     </p>
                     <p class="event-timing">
-                      <i class="far fa-clock text-white mr-1"></i>
+                      <i class="far fa-clock mr-2 events-icon"></i>
                       Time: {{ev.acf.event_time}}
                     </p>
 
@@ -64,7 +64,7 @@
         <div class="col-md-6">
           <div class="row">
             <div class="col-md-12 card">
-              <h2 class="mt-2 pt-2 text-center">
+              <h2 class="mt-2 pt-2 pb-2 text-center">
                 <i class="fas fa-users mr-2"></i>Listen To Our Members and Guests
               </h2>
               <iframe
@@ -198,6 +198,7 @@ export default {
   color: #fff;
 }
 .event-timing {
+  margin-top: 10px;
   font-size: 14px;
 }
 .details {
@@ -209,7 +210,7 @@ export default {
 }
 .card-custom-header {
   padding: 10px;
-  color: #faa72f;
+  color: var(--rotary-gold);
   /* background: var(--azure); */
   /* background: #faa933; */
   /* background: #2ecc70; */
@@ -304,7 +305,7 @@ hr {
 }
 
 .scrollbar {
-  height: 100%;
+  height: 650px;
   overflow: scroll;
 }
 
@@ -323,6 +324,13 @@ hr {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
+}
+
+.events-icon {
+  color: var(--rotary-gold) !important;
+  font-size: 18px;
+  min-width: 20px;
+  text-align: center;
 }
 </style>
 

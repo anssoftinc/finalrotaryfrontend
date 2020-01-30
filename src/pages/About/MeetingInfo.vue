@@ -7,6 +7,7 @@
         <tr>
           <td>Official Name</td>
           <td>Rotary Club of Kathmandu Mid-Town</td>
+          <!--  -->
         </tr>
         <tr>
           <td>Logo</td>

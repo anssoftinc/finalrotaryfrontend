@@ -74,11 +74,11 @@ export default {
 <style scoped>
 .section {
   /* background: #3a5879; */
-   background: #025198;    
+  background: #025198;
 }
 h1 {
   /* color: #fff; */
-  color:#ffd700;
+  color: #ffd700;
 }
 hr {
   border-color: #ffd700;
@@ -141,7 +141,7 @@ hr {
 .transperent_block .black_hover_block_text {
   z-index: 10;
   color: #fff;
- /* color:#ffd700; */
+  /* color:#ffd700; */
   position: absolute;
   height: 400px;
   text-align: center;
@@ -153,7 +153,7 @@ hr {
 }
 .black_hover_block_text i:hover {
   color: #77132f;
-   /* color:#ffd700; */
+  /* color:#ffd700; */
 }
 .black_hover_block_text i {
   padding: 10px 10px;
@@ -225,17 +225,17 @@ hr {
   overflow: hidden;
 }
 .read-more {
-  color: #FAA72F;
+  color: #faa72f;
   display: table;
   padding-top: 2px;
   height: 35px;
 }
-.read-more:hover{
-  border-bottom: 1px solid #FAA72F;
+.read-more:hover {
+  border-bottom: 1px solid #faa72f;
 }
-.read-more a{
+.read-more a {
   /* color: #025198; */
-  color:#FAA72F;
+  color: #faa72f;
 }
 @media only screen and (max-width: 768px) {
   body{
