@@ -138,6 +138,20 @@ height: 211px;
 hr{
   background-color:#FAA72F;
 }
+@media only screen and (max-width: 768px) {
+  .gift-of-sight{
+    display: block;
+    text-align: center;
+     padding: 5px;
+  }
+}
+@media only screen and (max-width: 1004px) {
+.gift-of-sight{
+    display: block;
+    text-align: center;
+     padding: 7px;
+  }
+}
 </style>
 
 

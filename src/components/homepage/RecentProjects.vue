@@ -237,6 +237,11 @@ hr {
   /* color: #025198; */
   color:#FAA72F;
 }
+@media only screen and (max-width: 768px) {
+  body{
+    text-align: center;
+  }
+}
 </style>
 
 
