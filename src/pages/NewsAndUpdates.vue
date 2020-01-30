@@ -1,10 +1,10 @@
 <template>
-  <div class="blog mt-5 pt-5 pb-5" v-if="!loading">
+  <div class="blog mt-5 pb-5" v-if="!loading">
     <div class="container">
       <h1 class="center">{{data.acf.title}}</h1>
       <img :src="data.acf.image.url" alt />
       <p class="date">{{data.acf.date}}</p>
-      <p class="center" v-html="data.acf.description"></p>
+      <p class="center text-justify" v-html="data.acf.description"></p>
     </div>
   </div>
 </template>
