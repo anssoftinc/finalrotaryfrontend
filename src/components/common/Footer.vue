@@ -52,9 +52,9 @@
           </router-link>-->
         </div>
       </div>
+      <p class="text-center mt-2">© 2019 Rotary Club Kathmandu Mid-Town. All rights reserved.</p>
+      <p class="text-center mt-2" style="color:rgba(119, 119, 119, 1);">Powered by ANS Soft © 2019</p>
     </div>
-    <p class="text-center mt-2">© 2019 Rotary Club Kathmandu Mid-Town. All rights reserved.</p>
-    <p class="text-center mt-2" style="color:rgba(119, 119, 119, 1);">Powered by ANS Soft © 2019</p>
   </footer>
 </template>
 
@@ -159,15 +159,15 @@ a:hover {
   font-size: 14.5px;
 }
 a:not([href]):not([tabindex]) {
-    color: inherit;
-    text-decoration: none;
-    color: #025198;
-}
-.contact-us:hover{
+  color: inherit;
+  text-decoration: none;
   color: #025198;
-  border-bottom: 1px solid #FAA72F;
 }
-.social a  {
+.contact-us:hover {
+  color: #025198;
+  border-bottom: 1px solid #faa72f;
+}
+.social a {
   color: #025198;
 }
 </style>

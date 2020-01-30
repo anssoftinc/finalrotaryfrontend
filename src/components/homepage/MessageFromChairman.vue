@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <h1 class="text-center">MESSAGES FOR 2019-2020</h1>
         <div class="container">
-          <div class="message-name row mt-3">
+          <div class="message-name row mt-3 text-center">
             <!-- <h2
               class="btn-messages p-2 mr-3 mt-2 text-center"
               v-for="(item,index) in message"
@@ -27,10 +27,10 @@
 
         <p id="neeva"></p>
         <div class="row section">
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <img src="/images/neeva.jpg" class="img-fluid" />
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 text-center">
             <h2 class="my-3 name">Neeva Mathema Pradhan - Kathmandu Mid-town President</h2>
             <p
               class="text-justify"
@@ -48,7 +48,7 @@
 
         <p id="district"></p>
         <div class="row section">
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <img src="/images/kiran.jpg" class="img-fluid" />
           </div>
           <div class="col-md-8">
@@ -160,7 +160,6 @@ a {
   }
 }
 @media only screen and (max-width: 768px) {
-
 }
 </style>
 

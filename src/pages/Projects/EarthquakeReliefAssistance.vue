@@ -2,7 +2,7 @@
   <div class="container p-4" id="top">
     <h1 class="text-left">Earthquake Relief Assistance</h1>
     <hr class="my-4" />
-    <div class="custom-card pl-5 pr-5">
+    <div class="custom-card">
       <div class="row align-items-center">
         <div class="col-md-5">
           <img src="/images/our-projects/earthquake-1.jpg" class="img-fluid" alt />
@@ -176,7 +176,7 @@
           <div class="col-md-3 text-center">
           <img src="/images/our-projects/Immediate-relief-1.jpg" class="img-fluid" alt />
           <img src="/images/our-projects/Immediate-relief-2.jpg" class="img-fluid" alt />
-        </div> -->
+        </div>-->
         <div class="col-md-12">
           <h4>Immediate relief after the earthquake</h4>
 
@@ -194,21 +194,21 @@
             <div class="col-md-6">
               <img src="/images/our-projects/Immediate-relief-4.jpg" class="img-fluid" alt />
             </div>
-          </div> -->
+          </div>-->
         </div>
         <div class="row px-3 mt-2">
-   <div class="col-md-3 text-center">
-          <img src="/images/our-projects/Immediate-relief-1.jpg" class="img-fluid" alt />
-        </div>
           <div class="col-md-3 text-center">
-                   <img src="/images/our-projects/Immediate-relief-2.jpg" class="img-fluid" alt />
-        </div>
-         <div class="col-md-3">
-              <img src="/images/our-projects/Immediate-relief-3.jpg" class="img-fluid" alt />
-            </div>
-            <div class="col-md-3">
-              <img src="/images/our-projects/Immediate-relief-4.jpg" class="img-fluid" alt />
-            </div>
+            <img src="/images/our-projects/Immediate-relief-1.jpg" class="img-fluid" alt />
+          </div>
+          <div class="col-md-3 text-center">
+            <img src="/images/our-projects/Immediate-relief-2.jpg" class="img-fluid" alt />
+          </div>
+          <div class="col-md-3">
+            <img src="/images/our-projects/Immediate-relief-3.jpg" class="img-fluid" alt />
+          </div>
+          <div class="col-md-3">
+            <img src="/images/our-projects/Immediate-relief-4.jpg" class="img-fluid" alt />
+          </div>
         </div>
       </div>
     </div>
@@ -239,7 +239,7 @@
         <!-- <div class="col-md-4 text-center">
           <img src="/images/our-projects/gulmi-1.jpg" class="img-fluid" alt />
            <img src="/images/our-projects/gulmi-2.jpg" class="img-fluid" alt />
-        </div> -->
+        </div>-->
         <div class="col-md-12">
           <h4>Shree Amarpur Om Prasad Gautam Higher Secondary School in Gulmi</h4>
 
@@ -254,9 +254,8 @@
             As a result of all this, nearly 450 students (250 girls and 200 boys) and about 20 teachers and staff are now able to use the reconstructed premises to ensure basic education in this remote, needy community.
           </p>
           <div class="row">
-                 <div class="col-md-4">
-          <img src="/images/our-projects/gulmi-1.jpg" class="img-fluid" alt />
-
+            <div class="col-md-4">
+              <img src="/images/our-projects/gulmi-1.jpg" class="img-fluid" alt />
             </div>
             <div class="col-md-4">
               <img src="/images/our-projects/gulmi-2.jpg" class="img-fluid" alt />
@@ -264,7 +263,6 @@
             <div class="col-md-4">
               <img src="/images/our-projects/gulmi-3.jpg" class="img-fluid" alt />
             </div>
-       
           </div>
         </div>
       </div>
@@ -285,7 +283,7 @@
     <div class="custom-card">
       <div class="row">
         <div class="col-md-4">
-          <img src="/images/our-projects/parbati-2.jpg" class="img-fluid"  style="height:250px;"/>
+          <img src="/images/our-projects/parbati-2.jpg" class="img-fluid" />
         </div>
         <div class="col-md-8 p-3">
           <h4>Parbati School, Dhungkhadka, Kavre</h4>
@@ -301,7 +299,7 @@
       <div class="row mt-3">
         <div class="col-md-4">
           <h2>Before:</h2>
-          <img src="/images/our-projects/parbati-1.jpg" class=" parbati-school-img img-fluid" />
+          <img src="/images/our-projects/parbati-1.jpg" class="parbati-school-img img-fluid" />
         </div>
         <div class="col-md-4">
           <h2>After:</h2>
@@ -374,7 +372,7 @@
           <img src="/images/our-projects/bungmatiteam.jpg" class="img-fluid text-center" />
         </div>
         <div class="col-md-3">
-           <img src="/images/our-projects/bungmati1.jpg" class="img-fluid" alt />
+          <img src="/images/our-projects/bungmati1.jpg" class="img-fluid" alt />
         </div>
       </div>
     </div>
@@ -458,7 +456,7 @@ export default {
 
 .custom-card {
   margin-top: 20px;
-  padding: 15px 15px;
+  padding: 20px 20px;
   background: #fff;
 }
 
@@ -473,16 +471,16 @@ export default {
 .custom-card img {
   padding-bottom: 15px;
 }
-a{
-  color:#025198;
+a {
+  color: #025198;
 }
-hr{
-  background-color: #FAA72F;
+hr {
+  background-color: #faa72f;
 }
-a:hover{
-text-decoration-color: #FAA72F;
+a:hover {
+  text-decoration-color: #faa72f;
 }
-.parbati-school-img{
-height: 237px;
+.parbati-school-img {
+  height: 237px;
 }
 </style>

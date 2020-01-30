@@ -1,9 +1,10 @@
 <template>
   <div class="container" style>
-    <h1 class="text-left">About Our Club</h1> 
-    <hr class="my-4" /><br>
+    <h1 class="text-left">About Our Club</h1>
+    <hr class="my-4" />
+    <br />
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-2 text-center">
         <img src="/images/midtown-logo.jpg" class="logo" alt />
       </div>
       <div class="col-md-7">
@@ -229,7 +230,7 @@ td:first-child {
   color: var(--primary-blue);
   font-size: 32px;
 }
-.outstanding-members span{
+.outstanding-members span {
   color: #025198;
 }
 
@@ -238,7 +239,7 @@ td:first-child {
   color: var(--steel-blue);
   font-size: 18px;
 }
-hr{
-  background-color: #FAA72F;
+hr {
+  background-color: #faa72f;
 }
 </style>

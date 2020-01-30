@@ -12,7 +12,8 @@
             <br />Durbar Marg, Kathmandu
             <br />Nepal
             <br />
-            <a class="google-map-link"
+            <a
+              class="google-map-link"
               href="https://www.google.com/maps/place/Hotel+Del'+Annapurna+Swimming+Pool/@27.7109994,85.3141391,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19017fa3b0cf:0xd988bc5b5c01f9df!8m2!3d27.7109994!4d85.3163278"
               target="_blank"
             >Google Map Link</a>
@@ -41,7 +42,8 @@
           <i class="fab fa-facebook"></i>
           <h5>Follow Us</h5>
           <h4 class="py-3">
-            <a class="rotary-club-contact-us"
+            <a
+              class="rotary-club-contact-us"
               href="https://www.facebook.com/RotaryClubOfKathmanduMidtown/"
             >Rotary Club of Kathmandu Mid-Town</a>
           </h4>
@@ -138,23 +140,21 @@ export default {
       formData.append("your_phone", this.user.your_phone);
       formData.append("your_email", this.user.your_email);
       formData.append("your_message", this.user.your_message);
-      this.$API
-        .sendContactUs(formData)
-        .then(data => {
-          if (data.data.status == "mail_sent") {
-            this.$toastr.success("Message", "Email Sent Successfully");
-          } else {
-            this.$toastr.error(
-              "Message",
-              "Unsuccessful: Please Check Your Details and try again"
-            );
-          }
+      this.$API.sendContactUs(formData).then(data => {
+        if (data.data.status == "mail_sent") {
+          this.$toastr.success("Message", "Email Sent Successfully");
+        } else {
+          this.$toastr.error(
+            "Message",
+            "Unsuccessful: Please Check Your Details and try again"
+          );
+        }
 
-          console.log(data);
-        })
-        // .catch(error => {
-        //   alert("Email Send Failed");
-        // });
+        console.log(data);
+      });
+      // .catch(error => {
+      //   alert("Email Send Failed");
+      // });
     }
   }
 };
@@ -208,18 +208,18 @@ p {
   width: 100%;
   display: block;
 }
-.btn-primary-blue{
+.btn-primary-blue {
   border-color: #025198;
 }
-.btn-primary-blue:hover{
-  background-color: #025198;;
+.btn-primary-blue:hover {
+  background-color: #025198;
 }
-.fav-icon h5{
+.fav-icon h5 {
   /* color: #025198; */
-  color:#FAA72F;
+  /* color:#FAA72F; */
   padding-top: 5px;
 }
-button{
+button {
   color: #025198;
 }
 /* .container h1{
@@ -229,23 +229,23 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
-    outline-width: 0;
-    outline-color: #025198;
+  outline: none;
+  outline-width: 0;
+  outline-color: #025198;
 }
-.rotary-club-contact-us{
+.rotary-club-contact-us {
   font-size: 22px;
-  color:#025198;
+  color: #025198;
 }
-.google-map-link{
+.google-map-link {
   font-size: 17px;
-    color:#025198;
+  color: #025198;
 }
-.rotary-club-contact-us:hover, .google-map-link:hover{
-  text-decoration-color: #FAA72F
+.rotary-club-contact-us:hover,
+.google-map-link:hover {
+  text-decoration-color: #faa72f;
 }
-hr{
-  background-color: #FAA72F;
+hr {
+  background-color: #faa72f;
 }
-
 </style>
