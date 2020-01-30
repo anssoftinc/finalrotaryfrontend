@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-3">
+  <div class="container mt-5">
     <h2>2018-19</h2>
     <div class="row">
       <div class="col-md-4">
@@ -1577,5 +1577,10 @@ a:hover{
 }
 hr{
   background-color: #FAA72F;
+}
+@media only screen and (max-width: 768px) {
+  .row .col-md-4{
+    margin: 0 auto;
+  }
 }
 </style>

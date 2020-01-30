@@ -54,7 +54,7 @@
       </div>
     </div>
     <p class="text-center mt-2">© 2019 Rotary Club Kathmandu Mid-Town. All rights reserved.</p>
-    <p class="text-center mt-2" style="color:rgba(119, 119, 119, 0.5);">Designed by ANS Soft © 2019</p>
+    <p class="text-center mt-2" style="color:rgba(119, 119, 119, 1);">Powered by ANS Soft © 2019</p>
   </footer>
 </template>
 

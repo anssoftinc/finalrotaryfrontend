@@ -14,7 +14,7 @@
         :class="selectedPage==1?'active':''"
       >Annual Weekly Newsletters</button>
       <button
-        class="btn "
+        class="btn button-award"
         @click="selectedPage=2"
         :class="selectedPage==2?'active':''"
       >Awards</button>
@@ -84,5 +84,19 @@ button:hover{
 }
 hr{
   background-color: #FAA72F;
+}
+.button-award-hr{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+button {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.button-award {
+  margin-bottom: 5px;
+}
 }
 </style>

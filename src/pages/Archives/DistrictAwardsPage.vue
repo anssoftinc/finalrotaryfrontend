@@ -1,8 +1,8 @@
 <template>
-  <div class="awards-page mt-3">
+  <div class="awards-page mt-5">
     <div class="container">
       <button
-        class="btn btn-primary-blue mr-2"
+        class="btn btn-outline-blue mr-2"
         @click="selectedPage=0"
         :class="selectedPage==0?'active':''"
       >2009-10</button>
@@ -125,8 +125,10 @@ li {
   height: 250px;
   object-fit: cover;
 }
-.btn-primary-blue{
+.btn-outline-primary{
   background-color: #025198;
+  border: 1px solid;
+  border-color: #025198
 }
 
 .active {
