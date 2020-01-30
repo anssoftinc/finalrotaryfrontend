@@ -61,6 +61,7 @@
                 <li class="nav-header">
                   <a style="text-decoration:none;color:#5E717D;cursor:context-menu">{{item.name}}</a>
                 </li>
+
                 <div v-if="dropStatus">
                   <li
                     v-for="child in item.children"
